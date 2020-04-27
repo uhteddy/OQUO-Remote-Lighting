@@ -1,0 +1,43 @@
+{
+  "name": "oquoapp",
+  "version": "1.0.0",
+  "productName": "OQUO Remote Lighting",
+  "description": "",
+  "main": "index.js",
+  "build": {
+    "appId": "com.uhteddy.oquo",
+    "mac": {
+      "category": "your.app.category.type",
+      "icon": "./src/assets/logo.ico"
+    },
+    "win": {
+      "target": "msi",
+      "icon": "./src/assets/oquocon.png"
+    },
+    "productName": "OQUO Remote Lighting",
+    "squirrelWindows": {
+      "iconUrl": "https://cdn.discordapp.com/attachments/701235763001557022/704197247520210995/oquocon.png",
+      "msi": true
+    }
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "custom-electron-titlebar": "^3.2.2-hotfix62",
+    "discord-rich-presence": "0.0.8",
+    "ejs-electron": "^2.0.3",
+    "electron-builder-squirrel-windows": "^22.5.1",
+    "fomantic-ui": "^2.8.4",
+    "gulp": "^4.0.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "electron": "^8.2.3",
+    "electron-winstaller": "^4.0.0"
+  },
+  "scripts": {
+    "test": "node index.js",
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC"
+}

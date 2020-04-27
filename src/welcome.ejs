@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OQUO Authorization</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <%- include('./components/topbar.ejs') %>
+    <div class="centeredClass">
+        <h2 class="header">Let's login.</h2>
+        <input type="text" name="auth" id="auth" placeholder="Authorization Code">
+        <a href="" id="helpButton">Need help?</a>
+    </div>
+
+    <script>
+        const button = document.getElementById("helpButton")
+        button.addEventListener('click', event => {
+            window.open('./help.ejs', '_blank', 'nodeIntegration=yes', 'preload=yes')
+        });
+    </script>
+</body>
+</html>

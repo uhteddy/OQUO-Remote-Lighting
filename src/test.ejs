@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!-- You MUST include jQuery before Fomantic -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles/semantic/dist/semantic.min.css">
+    <script src="./styles/semantic/dist/semantic.min.js"></script>   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body class="ui active dimmer">
+    <%- include('./components/topbar.ejs') %>
+    <div class="ui modal active fullscreen">
+        <div class="header">
+          OQUO Authorization
+        </div>
+        <div class="image content">
+          <div class="description">
+            <div class="ui header">Let's begin.</div>
+            <p>In order for you to start using our service you'll need to let us know where your lights are.</p>
+            <p>If you say "/console" in chat or ALT+F9 your authorization code will be printed on the Server code.</p>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="ui black deny button">
+            Exit
+          </div>
+          <div class="ui positive right labeled icon button">
+            Authorize
+            <i class="checkmark icon"></i>
+          </div>
+          <div class="ui animated fade button" tabindex="0">
+            <div class="visible content">Sign-up for a Pro account</div>
+            <div class="hidden content">
+              $12.99 a month
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="ui text loader">Checking Authorization Status</div>
+</body>
+
+<script>
+$('.modal')
+  .modal('show')
+;
+</script>
+</html>
